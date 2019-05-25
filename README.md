@@ -26,11 +26,12 @@
 
 今回は、これを応用して、任意の画像を一筆書きによって描く簡単なスクリプトを書いてみた。
 例えば、サンプル画像のジョゼッぺ・ペアノの肖像（パブリックドメイン）
-
+<img src="https://raw.githubusercontent.com/tannakaken/peanocurvestroke/master/Giuseppe_Peano.jpg" width="500">
 を、このスクリプトの入力にすると、
 
 `python main.py Gioseppe_Peano.jpg`
 
 次の画像が生まれる。
 
+<img src="https://raw.githubusercontent.com/tannakaken/peanocurvestroke/master/Giuseppe_Peano_peanocurved.sample.png" width="500">
 
