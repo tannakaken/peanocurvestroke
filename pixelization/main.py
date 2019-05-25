@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from PIL import Image
 import numpy as np
 
@@ -13,4 +14,6 @@ def pixelization(filename):
     return arr
 
 if __name__ == '__main__':
-    pixelization('../Lenna.png')
+    import os.path
+    arr = pixelization(os.path.dirname(__file__) + '/../Giuseppe_Peano.jpg')
+    print(arr)
