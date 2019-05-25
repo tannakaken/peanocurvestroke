@@ -28,21 +28,29 @@ class Peano:
         self.goto(x + width*5/6, y + height*5/6)
 
     def stroke(self, x, y, width, height, depth):
-        if depth == 0:
+        if depth <= 0:
             self.unit(x, y, width, height)
         else:
             new_width = width/3
             new_height = height/3
-            new_depth = depth-1
-            self.stroke(x, y, new_width, new_height, new_depth)
-            self.stroke(x+new_width, y+new_height, new_width, -new_height, new_depth)
-            self.stroke(x+2*new_width, y, new_width, new_height, new_depth)
-            self.stroke(x+width, y+new_height, -new_width, new_height, new_depth)
-            self.stroke(x+2*new_width, y+2*new_height, -new_width, -new_height, new_depth)
-            self.stroke(x+new_width, y+new_height, -new_width, new_height, new_depth)
-            self.stroke(x, y+2*new_height, new_width, new_height, new_depth)
-            self.stroke(x+new_width, y+height, new_width, -new_height, new_depth)
-            self.stroke(x+2*new_width, y+2*new_height, new_width, new_height, new_depth)
+            if depth % 3 == 0:
+                odd_depth = depth - 2
+                even_depth = depth - 5
+            elif depth % 3 == 1:
+                odd_depth = depth - 3
+                even_depth = depth - 3
+            else:
+                odd_depth = depth - 4
+                even_depth = depth - 1
+            self.stroke(x, y, new_width, new_height, odd_depth)
+            self.stroke(x+new_width, y+new_height, new_width, -new_height, even_depth)
+            self.stroke(x+2*new_width, y, new_width, new_height, odd_depth)
+            self.stroke(x+width, y+new_height, -new_width, new_height, even_depth)
+            self.stroke(x+2*new_width, y+2*new_height, -new_width, -new_height, odd_depth)
+            self.stroke(x+new_width, y+new_height, -new_width, new_height, even_depth)
+            self.stroke(x, y+2*new_height, new_width, new_height, odd_depth)
+            self.stroke(x+new_width, y+height, new_width, -new_height, even_depth)
+            self.stroke(x+2*new_width, y+2*new_height, new_width, new_height, odd_depth)
 
     def stroke_array(self, width, height, data):
         rows, columns = data.shape

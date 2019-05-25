@@ -7,7 +7,7 @@ def pixelization(filename):
     small_im = monochrome_im.resize((49,49))
 
     arr = np.array(small_im)
-    arr = 4 - (arr / (256/4))
+    arr = 7 - (arr / (256/8))
     arr = arr.astype(np.uint8)
 
     return arr

@@ -1,7 +1,8 @@
 from pixelization import pixelization
 from peano import Peano
+import sys
 
-data = pixelization('./Lenna.png')
+data = pixelization(sys.argv[1])
 size = 8100
 peano = Peano(size,size)
 peano.stroke_array(size, size, data)
