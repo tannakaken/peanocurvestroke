@@ -3,3 +3,4 @@ __pycache__
 *.jpg
 venv
 !Giuseppe_Peano.jpg
+!Giuseppe_Peano_peanocurved.sample.png
