@@ -1,7 +1,7 @@
 # ペアノ曲線による一筆書き
 
 ペアノ曲線とは、平面を充填する曲線の一種である。
-詳しくはWikipediaの[該当ページ]{https://ja.wikipedia.org/wiki/%E3%83%9A%E3%82%A2%E3%83%8E%E6%9B%B2%E7%B7%9A}
+詳しくはWikipediaの[該当ページ](https://ja.wikipedia.org/wiki/%E3%83%9A%E3%82%A2%E3%83%8E%E6%9B%B2%E7%B7%9A)
 を読んでいただければわかるであろう。
 
 さて、ペアノ曲線は手で描ける曲線の極限として定義される。
@@ -25,6 +25,7 @@
 つまりペアノ曲線の理論を応用すれば、一筆書きによって任意の濃さのピクセルを表現することができるのだ。
 
 今回は、これを応用して、任意の画像を一筆書きによって描く簡単なスクリプトを書いてみた。
+
 例えば、サンプル画像のジョゼッぺ・ペアノの肖像（パブリックドメイン）
 
 <img src="https://raw.githubusercontent.com/tannakaken/peanocurvestroke/master/Giuseppe_Peano.jpg" width="500">
@@ -37,3 +38,4 @@
 
 <img src="https://raw.githubusercontent.com/tannakaken/peanocurvestroke/master/Giuseppe_Peano_peanocurved.sample.png" width="500">
 
+一筆書きになっている様子は上の画像をクリックして拡大してみればわかるであろう。
