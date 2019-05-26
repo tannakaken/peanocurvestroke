@@ -73,3 +73,9 @@
 <img src="https://raw.githubusercontent.com/tannakaken/peanocurvestroke/master/Giuseppe_Peano_peanocurved.sample.png" width="500">
 
 一筆書きになっている様子は上の画像をクリックして拡大してみればわかるであろう。
+
+ただし、作りが雑なために、正方形にリサイズしてから処理を行っているため、
+アスペクト比が狂って少し横長になっている。
+
+まあ、こんな処理で汎用ツールを作るのも馬鹿らしいので、
+気になるようなら、前処理をするなり、コードを書き直すなりしてほしい。
