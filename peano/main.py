@@ -157,3 +157,4 @@ if __name__ == '__main__':
     depth = int(sys.argv[1])
     peano.stroke(0,0,size,size,depth)
     peano.show()
+    peano.save("peano" + str(depth) + ".png")
